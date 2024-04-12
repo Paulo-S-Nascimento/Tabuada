@@ -21,22 +21,21 @@ header hr {
   text-align: center;
 }
 
-.resultado {
-  background-color: antiquewhite;
-}
-
 #tabuada {
   max-height: 500px;
 }
 
-.numbers, .operations {
+.caixa_operacional {
+  margin: 10px 0px;
+  height: 1024px;
+}
+.caixa_operacional .numbers {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-direction: row;
+  gap: 10px;
   margin-top: 5px;
 }
-
-.numbers > div {
+.caixa_operacional .numbers > div {
   padding: 10px 15px;
   font-size: 18px;
   background-color: #f1f5f6;
@@ -46,28 +45,52 @@ header hr {
   width: 20px;
   cursor: pointer;
 }
-
-.resultado {
-  position: relative;
-  top: -490px;
-  left: 70px;
+.caixa_operacional .tela {
+  background-color: #FEF6F0;
   width: 200px;
-  height: 430px;
-  background-color: #f1f5f6;
-  border: 4px solid #080B11;
+  margin: 30px 0px 0px 350px;
+  font-size: 18px;
+  border: 3px solid rgb(158, 10, 10);
 }
-
-.operations {
+.caixa_operacional .tela #visualizacao {
+  word-wrap: break-word;
+  max-height: 100%;
+  overflow: auto;
+}
+.caixa_operacional .resultado {
+  background-color: #FEF6F0;
+  width: 200px;
+  height: 450px;
+  margin: 10px 0px 0px 350px;
+  border: 3px solid rgb(158, 10, 10);
+}
+.caixa_operacional .resultado #result {
+  margin: 10px;
+  word-wrap: break-word;
+  max-height: 100%;
+  overflow: auto;
+}
+.caixa_operacional .operations {
   display: flex;
   flex-direction: row;
+  margin: 5px;
+  gap: 10px;
 }
-
-.operations > div {
+.caixa_operacional .operations > div {
   padding: 10px 15px;
   font-size: 18px;
   background-color: #f7f8f1;
   color: #202b38;
   border-radius: 100px;
+  width: 20px;
   border: 3px solid rgb(158, 10, 10);
   cursor: pointer;
+}
+.caixa_operacional #go {
+  width: 35px;
+  background-color: rgb(149, 209, 52);
+}
+.caixa_operacional #clear {
+  width: 75px;
+  background-color: rgb(149, 209, 52);
 }/*# sourceMappingURL=styles.css.map */
