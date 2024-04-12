@@ -1,0 +1,13 @@
+{
+    "short_name": "Tabuada",
+    "name": "Tabuada",
+    "icons": [
+
+    ],
+    
+    "start_url": "/index.html",
+    "background_color": "#022263",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "#410CD9"
+}

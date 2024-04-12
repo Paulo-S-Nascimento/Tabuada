@@ -1,0 +1,8 @@
+@use "variables" as var;
+
+@mixin flex1() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
