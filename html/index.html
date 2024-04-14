@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="/manifest.json">
+
     <title> Tabuada </title>
 </head>
 <body>
 
+
+   <!-- cabeçalho do sistema  -->
     <header> 
         <h1>Tabuada</h1> 
-        <hr> 
+         <hr> 
     </header> 
 
+   <!-- caixa contendo todo o projeto  -->
     <main class="all">
 
         <div id="tabuada">  
 
+         <div class="indicacao_1">
+           <p> Escolha um Número </p>
+          <img src="/image/seta.png" alt="imagem de uma seta"> 
+        </div>
+
         <div class="caixa_operacional"> 
 
-          <div class="numbers">
+          <div class="numbers"> 
             <div id="1">1</div>
             <div id="2">2</div>
             <div id="3">3</div>
@@ -31,20 +41,20 @@
             <div id="9">9</div>
           </div>
 
-
+         <div class="indicacao_2">
+            <p> Escolha um Operador</p>
+           <img src="/image/seta.png" alt="imagem de uma seta"> 
+         </div>
 
         <div class="operations">
           <div id="add">+</div>
           <div id="subtract">-</div>
           <div id="multiply">*</div>
-          <div id="divide">/</div>
-          <div id="go">OK</div>
-          <div id="clear">LIMPAR</div>    
+          <div id="divide">/</div> 
         </div>  
-
-        <div class="tela"> 
-          <div id="visualizacao"> 0 </div>      
-      </div>
+        
+        <div id="go"> Confirmar </div>
+        <div id="clear">Limpar</div>   
 
         <div class="resultado"> 
           <div id="result"> Tabuada aqui </div>      
@@ -57,5 +67,7 @@
 
 
   <script src="/js/main.js"></script>
+</script>
+  
 </body>
 </html>

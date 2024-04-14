@@ -2,10 +2,14 @@
     "short_name": "Tabuada",
     "name": "Tabuada",
     "icons": [
-
+        {
+            "src": "/image/seta.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
     ],
     
-    "start_url": "/index.html",
+    "start_url": "/html/index.html",
     "background_color": "#022263",
     "display": "fullscreen",
     "scope": "/",

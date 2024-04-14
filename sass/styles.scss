@@ -28,10 +28,32 @@ header {
 
 #tabuada {
     max-height: 500px;
+
+    .indicacao_1 {
+      display: flex;
+      justify-content: center;
+    }
+
+    div p {
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var.$branco;
+      font-weight: bolder;
+    }
+
+    div img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .indicacao_2 {
+      display: flex;
+      justify-content: center;
+      margin: 15px;
+    }
 }
 
 .caixa_operacional {
-  // display: flex;
   margin: 10px 0px;
   height: 1024px;
 
@@ -53,26 +75,11 @@ header {
   cursor: pointer; 
 }
 
-.tela {
-  background-color: var.$branco;
-  width: 200px;
-  margin: 30px 0px 0px 350px;
-  font-size: 18px;
-  border: 3px solid var.$vermelho;
-
-  #visualizacao {
-    word-wrap: break-word;
-    max-height: 100%;
-    overflow: auto;
-  }
-
-}
-
 .resultado  {
   background-color: var.$branco;
   width: 200px;
   height: 450px;
-  margin: 10px 0px 0px 350px;
+  margin: -80px 0px 0px 350px;
   border: 3px solid var.$vermelho;
 
   #result {
@@ -80,12 +87,16 @@ header {
     word-wrap: break-word;
     max-height: 100%;
     overflow: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
     
   }
 }
 
 .operations {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   margin: 5px;
   gap: 10px;
@@ -103,16 +114,45 @@ cursor: pointer;
 }
 
 #go  {
-  width: 35px;
-  background-color: rgb(149, 209, 52);
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 80px;
+  background-color: rgb(240, 243, 235);
+  border: 3px solid var.$vermelho;
+  border-radius: 100px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 #clear {
-  width: 75px;
-  background-color: rgb(149, 209, 52);
-
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 80px;
+  background-color: rgb(230, 233, 225);
+  border: 3px solid var.$vermelho;
+  border-radius: 100px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 }  
 
+.numbers > div.selected {
+  background-color: red;
+  color: white; 
+}
 
+.operations > div.selected {
+  background-color: red;
+  color: white; 
+}
+
+#go.Selected {
+  background-color: red;
+  color: white; 
+}
+
+#clear.Selected {
+  background-color: red;
+  color: white; 
+}
